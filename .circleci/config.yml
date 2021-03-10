@@ -13,21 +13,21 @@ jobs:
     steps:
       - run:
           command: |
-            echo "<< parameters.option1 >> - build"
+            echo "<< pipeline.parameters.option1 >> - build"
   test:
     docker:
       - image: alpine
     steps:
       - run:
           command: |
-            echo "<< parameters.option1 >> - test"
+            echo "<< pipeline.parameters.option1 >> - test"
   deploy:
     docker:
       - image: alpine
     steps:
       - run:
           command: |
-              echo "<< parameters.option1 >> - test"
+            echo "<< pipeline.parameters.option1 >> - deploy"
 
 # Orchestrate our job run sequence
 workflows:
