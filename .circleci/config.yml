@@ -9,14 +9,14 @@ parameters:
 jobs:
   build:
     docker:
-      image: alpine
+      - image: alpine
     steps:
       - run:
           command: |
             echo "<< parameters.option1 >> - build"
   test:
     docker:
-      image: alpine
+      - image: alpine
     steps:
       steps:
       - run:
@@ -24,7 +24,7 @@ jobs:
             echo "<< parameters.option1 >> - test"
   deploy:
     docker:
-      image: alpine
+      - image: alpine
     steps:
       - run:
         command: |
