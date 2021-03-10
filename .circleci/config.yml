@@ -26,8 +26,8 @@ jobs:
       - image: alpine
     steps:
       - run:
-        command: |
-            echo "<< parameters.option1 >> - test"
+          command: |
+              echo "<< parameters.option1 >> - test"
 
 # Orchestrate our job run sequence
 workflows:
