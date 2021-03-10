@@ -3,6 +3,7 @@ version: 2.1
 parameters:
   option1:
     type: string
+    default: abc
 
 # Define the jobs we want to run for this project
 jobs:
