@@ -18,7 +18,6 @@ jobs:
     docker:
       - image: alpine
     steps:
-      steps:
       - run:
           command: |
             echo "<< parameters.option1 >> - test"
